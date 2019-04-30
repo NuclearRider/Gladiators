@@ -1,0 +1,7 @@
+- Monsters with abilites
+- Fighters with masteries and coinflip chance to win
+- Fighter action randomizer
+- Random biome
+- Magic card
+- Conversation
+- Sickness
