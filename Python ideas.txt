@@ -1,3 +1,17 @@
+Next Steps
+Improve weapons list
+Improve body parts list
+Make the program import the correct number of list items
+Fix the bug where the first person to swing has a higher chance to win at the end
+
+Ultimate Battle:
+Make 8 pairs of fighters
+Each winner then fights another winner
+Last one standing is the ultimate winner
+Make each fighter keep the same weapon within the match?
+Make matches end sooner - only 2 or 3 hits? So that would be a 20% chance per hit to kill
+
+Other Ideas
 - Monsters with abilites
 - Fighters with masteries and coinflip chance to win
 - Fighter action randomizer
