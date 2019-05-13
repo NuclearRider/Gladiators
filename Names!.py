@@ -35,44 +35,48 @@ for row in csv_b:
     body.append(row[0])
 
 fighters_name = []
+fighters_short = []
 i = 1
 while i < 9:
-    fighters_name.append(names[random.randrange(1, len(names))] + names[random.randrange(1, len(names))]
-                         + " the " + descript[random.randrange(1, len(descript))] + "ly " +descript[random.randrange(1, len(descript))])
+    
+    fighters_short.append(names[random.randrange(1, len(names))] + names[random.randrange(1, len(names))])
+    
+    fighters_name.append(fighters_short[i-1] + " the " + descript[random.randrange(1, len(descript))] + "ly " +descript[random.randrange(1, len(descript))])
     i += 1
 
 #ftr1first = names[random.randrange(1, len(names))] + names[random.randrange(1, len(names))]
 #ftr2first = names[random.randrange(1, len(names))] + names[random.randrange(1, len(names))]
 #ftr1 = ftr1first + " the " + descript[random.randrange(1, len(descript))] + "ly " +descript[random.randrange(1, len(descript))]
 #ftr2 = ftr2first  + " the " + descript[random.randrange(1, len(descript))] + "ly " +descript[random.randrange(1, len(descript))]
-#Rider rules
 
 print("Tonight's Fighters")
 print(" ")
-print(fighters_name)
+print("\n".join(fighters_name))
+#print(fighters_name)
 
-print(" ")
-print("First Match")
-
-print(fighters_name[1])
-print("Versus")
-print(fighters_name[2])
-print(" ")
+p = 0
+while p < 8:
+    print(" ")
+    print("Match "+ str(p/2+1) )
+    print(fighters_name[p])
+    print("Versus")
+    print(fighters_name[p+1])
+    print(" ")
+    p += 2
 
 bothalive = True
 
 while bothalive == True:
-    print(fighters_name[1] + " hits " + fighters_name[2] + " with his " + weapons[random.randrange(1, len(weapons))] + " in the " + body[random.randrange(1, len(body))])
+    print(fighters_short[0] + " hits " + fighters_short[1] + " with their " + weapons[random.randrange(1, len(weapons))] + " in the " + body[random.randrange(1, len(body))])
     attk = random.randrange(1, 1000)
-    if attk > 800:
-        print(fighters_name[2] + " is killed!")
+    if attk > 900:
+        print(fighters_name[1] + " is killed!")
         bothalive = False
     if bothalive == False:
         break
     
-    print(fighters_name[2] + " hits " + fighters_name[1] + " with his " + weapons[random.randrange(1, len(weapons))] + " in the " + body[random.randrange(1, len(body))])
+    print(fighters_short[1] + " hits " + fighters_short[0] + " with their " + weapons[random.randrange(1, len(weapons))] + " in the " + body[random.randrange(1, len(body))])
     attk = random.randrange(1, 1000)
-    if attk > 800:
-        print(fighters_name[1] + " is killed!")
-        bothalive = False     
-     
+    if attk > 900:
+        print(fighters_name[0] + " is killed!")
+        bothalive = False
