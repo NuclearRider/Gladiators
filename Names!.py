@@ -45,6 +45,7 @@ while i < 9:
 #ftr2first = names[random.randrange(1, len(names))] + names[random.randrange(1, len(names))]
 #ftr1 = ftr1first + " the " + descript[random.randrange(1, len(descript))] + "ly " +descript[random.randrange(1, len(descript))]
 #ftr2 = ftr2first  + " the " + descript[random.randrange(1, len(descript))] + "ly " +descript[random.randrange(1, len(descript))]
+#Rider rules
 
 print("Tonight's Fighters")
 print(" ")
